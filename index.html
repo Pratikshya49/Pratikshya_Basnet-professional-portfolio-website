@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION WITH BACKGROUND VIDEO -->
+    <header id="hero">
+
+        <video autoplay loop muted id="video-background">
+            <source src="background-loop2.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay">
+            <h1>Pratikshya Basnet</h1>
+            <p>Frontend Developer • Mobile App Developer • UI/UX Enthusiast</p>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <span class="logo">Portfolio</span>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menu-button" aria-expanded="false">☰</button>
+        </nav>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2 class ="center-text">About Me</h2>
+        <p>My name is Pratikshya Basnet. I am passionate about technology and creative problem-solving, with hands-on experience in developing responsive web and mobile applications. My projects include a feature-rich weather app using HTML, CSS, JavaScript, and PHP, as well as a mobile banking app built with Flutter, both of which showcase my strengths in UI/UX, API integration, and full-stack development. I am always eager to learn new skills and take on challenging projects that make a positive impact. Let’s connect and build something amazing together.</p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div id="projects-grid">
+
+            <div class="project-card">
+                <img src="my_app.png" alt="Project Screenshot">
+                <h3>Mobile App</h3>
+                <p>This project demonstrates a fully functional mobile banking application built with Flutter. It showcases skills in UI/UX design, state management, navigation, and various real-world features.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="weather_app.png" alt="Project Screenshot">
+                <h3>Weather App</h3>
+                <p>A modern weather app built with HTML, CSS, JavaScript, and PHP that displays real-time weather and stores historical data using MySQL.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form id="contact-form-id">
+            <label>Name:</label>
+            <input id="name" type="text" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input id="email" type="email" placeholder="Enter your email">
+
+            <label>Message:</label>
+            <textarea id="message" placeholder="Write your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="form-message"></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Pratikshya Basnet. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
